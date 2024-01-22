@@ -1,0 +1,20 @@
+{
+  "name": "uib_project_snezana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server & npm run compile-sass",
+    "compile-sass": "sass --watch src/scss/main.scss src/styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "live-server": "^1.2.2"
+  }
+}
