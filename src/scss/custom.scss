@@ -7,11 +7,14 @@
 /* -------begin customization-------- */
 
 /* simply assign the value */
-//$body-bg: #eeeeee;
-//$primary: orange;
+$body-bg: #eeeeee;
+$primary: #3e64ff;
+//$primary: $red-500;
 
 /* or, use an existing variable */
 $theme-colors: (
-  primary: #3e64ff,
+  //primary: #3e64ff,
+  primary: $red-500
+  //secondary: red,
 );
 /* -------end customization-------- */

@@ -12,9 +12,70 @@ body {
   font-weight: 400;
   color: #999999;
 }
-/*--------------------------------------------------------------
-# Box icons
---------------------------------------------------------------*/
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: $primary;
+  &:hover {
+    color: #0056b3;
+    //text-decoration: underline;
+  }
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $dark;
+}
+h2,
+.h2 {
+  font-size: 2rem;
+}
+h3,
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+.rounded-lg {
+  border-radius: 0.3rem !important;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+sup {
+  top: -0.1em;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.ftco-animate {
+  // opacity: 0;
+  // visibility: hidden;
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -176,20 +237,12 @@ body {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/woman-sitting-mountain-top.jpg") top right
-    no-repeat;
+  background: url("../images/woman-sitting-mountain-top.jpg")
+    top right no-repeat;
   background-size: cover;
+  background-position: 63% 63%;
   position: relative;
   z-index: -10;
-  //   &:before {
-  //     content: "";
-  //     background: rgba(255, 255, 255, 0.8);
-  //     position: absolute;
-  //     bottom: 0;
-  //     top: 0;
-  //     left: 0;
-  //     right: 0;
-  //   }
   .subheading {
     text-transform: uppercase;
     font-size: 16px;
@@ -292,14 +345,13 @@ body {
     position: relative;
 
     padding: 30px;
-    
 
     img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        padding: 6px;
-        border:$primary 3px solid;
+      width: 75%;
+      height: auto;
+      border-radius: 50%;
+      padding: 6px;
+      border: #e1e1e1 3px solid;
     }
   }
 }
@@ -344,4 +396,404 @@ body {
   &:hover {
     color: #000000;
   }
+}
+
+/*--------------------------------------------------------------
+  # Resume Section
+  --------------------------------------------------------------*/
+
+.resume-section {
+  padding: 7em 0;
+  position: relative;
+  display: block;
+
+  #navi {
+    top: 180px;
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+    margin-left: 60px;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      font-weight: 700;
+      list-style: none;
+      margin-bottom: 10px;
+      a {
+        color: #000000;
+      }
+      a.current {
+        color: $primary;
+        margin-left: 20px;
+        position: relative;
+        &:after {
+          position: absolute;
+          top: 50%;
+          left: -24px;
+          width: 20px;
+          height: 2px;
+          content: "";
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background: #3e64ff;
+        }
+      }
+    }
+  }
+  .flaticon-ideas:before {
+    content: "\f100";
+  }
+  .page {
+    width: 100%;
+    margin-bottom: 7em;
+    .heading {
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: $primary;
+    }
+
+    .resume-wrap {
+      width: 100%;
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding-bottom: 10px;
+      margin-right: 16px;
+      .icon {
+        width: 50px;
+        height: 50px;
+        background: $primary;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 16px;
+        iconify-icon {
+          font-size: 30px;
+          padding: 15px;
+          color: #fff;
+        }
+      }
+      .date {
+        font-weight: 700;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        color: #3e64ff;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .position {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000000;
+      }
+    }
+    .h2,
+    .h5 {
+      line-height: 1.5;
+      color: black;
+      font-weight: 700 !important;
+    }
+  }
+  .progress-wrap {
+    h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+  }
+  .progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    margin-bottom: 16px;
+  }
+  .progress {
+    //height: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #e6e6e6;
+  }
+}
+
+.circular-progress {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(150px - 10px);
+  height: calc(150px - 10px);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.percentage {
+  position: relative;
+  font-size: 2rem;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --progress-bar-width: 150px;
+    --progress-bar-height: 150px;
+    --font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --progress-bar-width: 120px;
+    --progress-bar-height: 120px;
+    --font-size: 1rem;
+  }
+}
+@keyframes progress {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio {
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(69, 80, 91, 0.8);
+    margin-bottom: 2rem;
+    &::before {
+      content: "";
+      background: rgba(255, 255, 255, 0.7);
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      top: 30px;
+      bottom: 30px;
+      transition: all ease-in-out 0.3s;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .portfolio-info {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      z-index: 3;
+      transition: all ease-in-out 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &::before {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        border-top: 3px solid #d7dce1;
+        border-left: 3px solid #d7dce1;
+        transition: all 0.5s ease 0s;
+        z-index: 9994;
+      }
+      &::after {
+        display: block;
+        content: "";
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom: 35px;
+        right: 35px;
+        border-bottom: 3px solid #d7dce1;
+        border-right: 3px solid #d7dce1;
+        transition: all 0.5s ease 0s;
+        z-index: 9994;
+      }
+      h4 {
+        font-size: 20px;
+        color: #45505b;
+        font-weight: 600;
+      }
+      p {
+        color: #45505b;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &:hover::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 1;
+    }
+    &:hover .portfolio-info {
+      opacity: 1;
+    }
+    &:hover .portfolio-info::before {
+      top: 15px;
+      left: 15px;
+    }
+    &:hover .portfolio-info::after {
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+  .leaf1 {
+    height: 450px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .health1 {
+    height: 550px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 84% 30%;
+    }
+  }
+  .health2 {
+    height: 400px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 85% 30%;
+    }
+  }
+  .oss1 {
+    height: 420px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 20% 30%;
+    }
+  }
+  .leaf2 {
+    height: 500px;
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 90% 30%;
+    }
+  }
+
+  .portfolio-links {
+    text-align: center;
+    z-index: 4;
+    a {
+      color: #45505b;
+      margin: 0 2px;
+      font-size: 28px;
+      display: inline-block;
+      transition: 0.3s;
+      &:hover {
+        color: #148af9;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 40px;
+  .portfolio-details-slider {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #0563bb;
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #0563bb;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
 }
