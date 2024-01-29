@@ -22,7 +22,12 @@
     />
   </head>
 
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-offset="20"
+    tabindex="0"
+  >
     <!-- <i class="bi bi-list mobile-nav-toggle d-lg-none"></i> -->
     <iconify-icon
       class="bi bi-list mobile-nav-toggle d-lg-none"
@@ -257,7 +262,9 @@
               </ul>
             </nav>
           </div>
-          <div class="col-md-9">
+          <div
+            class="col-md-9"
+          >
             <div id="page-1" class="page one">
               <h2 class="heading">Education</h2>
               <div
@@ -466,7 +473,8 @@
 
             <div id="page-3" class="page three">
               <h2 class="heading">Skills</h2>
-              <div
+              <div class="contentPr">
+                <div
                 class="row progress-circle mb-5"
               >
                 <div class="col-lg-4 mb-4">
@@ -483,8 +491,9 @@
                       class="circular-progress"
                       data-inner-circle-color="white"
                       data-percentage="80"
-                      data-progress-color="#0d6efd"
+                      data-progress-color="#520DC2"
                       data-bg-color="white"
+                      data-animate="false"
                     >
                       <div
                         class="inner-circle"
@@ -542,8 +551,9 @@
                       class="circular-progress"
                       data-inner-circle-color="white"
                       data-percentage="70"
-                      data-progress-color="#0d6efd"
+                      data-progress-color="#520DC2"
                       data-bg-color="white"
+                      data-animate="false"
                     >
                       <div
                         class="inner-circle"
@@ -601,8 +611,9 @@
                       class="circular-progress"
                       data-inner-circle-color="white"
                       data-percentage="60"
-                      data-progress-color="#0d6efd"
+                      data-progress-color="#520DC2"
                       data-bg-color="white"
+                      data-animate="false"
                     >
                       <div
                         class="inner-circle"
@@ -647,6 +658,8 @@
                   </div>
                 </div>
               </div>
+              </div>
+ 
 
               <!-- progress bar -->
               <div class="row">
@@ -657,12 +670,13 @@
                     <h3>Photoshop</h3>
                     <div class="progress">
                       <div
-                        class="progress-bar color-1"
+                        class="progress-bar color-1 progress-bar-striped progress-bar-animated"
                         role="progressbar"
                         aria-valuenow="70"
                         aria-valuemin="0"
                         aria-valuemax="100"
                         style="width: 70%"
+                        
                       >
                         <span>70%</span>
                       </div>
@@ -676,7 +690,7 @@
                     <h3>Illustrator</h3>
                     <div class="progress">
                       <div
-                        class="progress-bar color-2"
+                        class="progress-bar color-2 progress-bar-striped progress-bar-animated"
                         role="progressbar"
                         aria-valuenow="40"
                         aria-valuemin="0"
@@ -695,7 +709,7 @@
                     <h3>Figma</h3>
                     <div class="progress">
                       <div
-                        class="progress-bar color-3"
+                        class="progress-bar color-3 progress-bar-striped progress-bar-animated"
                         role="progressbar"
                         aria-valuenow="50"
                         aria-valuemin="0"
@@ -714,7 +728,7 @@
                     <h3>WordPress</h3>
                     <div class="progress">
                       <div
-                        class="progress-bar color-4"
+                        class="progress-bar color-4 progress-bar-striped progress-bar-animated"
                         role="progressbar"
                         aria-valuenow="80"
                         aria-valuemin="0"
@@ -733,7 +747,7 @@
                     <h3>JavaScript</h3>
                     <div class="progress">
                       <div
-                        class="progress-bar color-5"
+                        class="progress-bar color-5 progress-bar-striped progress-bar-animated"
                         role="progressbar"
                         aria-valuenow="30"
                         aria-valuemin="0"
@@ -752,7 +766,7 @@
                     <h3>Git</h3>
                     <div class="progress">
                       <div
-                        class="progress-bar color-6"
+                        class="progress-bar color-6 progress-bar-striped progress-bar-animated"
                         role="progressbar"
                         aria-valuenow="70"
                         aria-valuemin="0"
@@ -866,7 +880,7 @@
           >
             <div class="portfolio-wrap health2">
               <img
-                src="src/images/projects/HealthCare Central/HealthCare-5.png"
+                src="./src/images/projects/HealthCare Central/HealthCare-5.png"
                 class="img-fluid"
                 alt=""
               />
@@ -875,7 +889,7 @@
                 <p>Website</p>
                 <div class="portfolio-links">
                   <a
-                    href="src/images/projects/HealthCare Central/HealthCare-5.png"
+                    href="./src/images/projects/HealthCare Central/HealthCare-5.png"
                     data-gallery="portfolioGallery"
                     data-lightbox="photos"
                     class="portfolio-lightbox"
@@ -885,7 +899,7 @@
                     ></iconify-icon
                   ></a>
                   <a
-                    href="projects/portfolio-details-healthcare.html"
+                    href="./projects/portfolio-details-healthcare.html"
                     class="portfolio-details-lightbox"
                     data-glightbox="type: external"
                     title="Portfolio Details"
@@ -898,7 +912,7 @@
             </div>
             <div class="portfolio-wrap leaf1">
               <img
-                src="src/images/projects/Leaflets/leaflet-1.png"
+                src="./src/images/projects/Leaflets/leaflet-1.png"
                 class="img-fluid"
                 alt=""
               />
@@ -907,7 +921,7 @@
                 <p>Design</p>
                 <div class="portfolio-links">
                   <a
-                    href="src/images/projects/Leaflets/leaflet-1.png"
+                    href="./src/images/projects/Leaflets/leaflet-1.png"
                     data-gallery="portfolioGallery"
                     class="portfolio-lightbox"
                     title="Web 3"
@@ -916,7 +930,7 @@
                     ></iconify-icon
                   ></a>
                   <a
-                    href="projects/portfolio-details-leaflet-1.html"
+                    href="./projects/portfolio-details-leaflet-1.html"
                     class="portfolio-details-lightbox"
                     data-glightbox="type: external"
                     title="Portfolio Details"
@@ -934,7 +948,7 @@
           >
             <div class="portfolio-wrap health1">
               <img
-                src="src/images/projects/Healthly/Healthly-4.png"
+                src="./src/images/projects/Healthly/Healthly-4.png"
                 class="img-fluid"
                 alt=""
               />
@@ -943,7 +957,7 @@
                 <p>Website</p>
                 <div class="portfolio-links">
                   <a
-                    href="src/images/projects/Healthly/Healthly-4.png"
+                    href="./src/images/projects/Healthly/Healthly-4.png"
                     data-gallery="portfolioGallery"
                     class="portfolio-lightbox"
                     title="Web 3"
@@ -952,7 +966,7 @@
                     ></iconify-icon
                   ></a>
                   <a
-                    href="projects/portfolio-details-healthly.html"
+                    href="./projects/portfolio-details-healthly.html"
                     class="portfolio-details-lightbox"
                     data-glightbox="type: external"
                     title="Portfolio Details"
@@ -965,7 +979,7 @@
             </div>
             <div class="portfolio-wrap oss1">
               <img
-                src="src/images/projects/oss/oss-4.png"
+                src="./src/images/projects/oss/oss-4.png"
                 class="img-fluid"
                 alt=""
               />
@@ -974,7 +988,7 @@
                 <p>Website</p>
                 <div class="portfolio-links">
                   <a
-                    href="src/images/projects/oss/oss-4.png"
+                    href="./src/images/projects/oss/oss-4.png"
                     data-gallery="portfolioGallery"
                     class="portfolio-lightbox"
                     title="App 3"
@@ -983,7 +997,7 @@
                     ></iconify-icon
                   ></a>
                   <a
-                    href="projects/portfolio-details-oss.html"
+                    href="./projects/portfolio-details-oss.html"
                     class="portfolio-details-lightbox"
                     data-glightbox="type: external"
                     title="Portfolio Details"
@@ -1001,7 +1015,7 @@
           >
             <div class="portfolio-wrap leaf2">
               <img
-                src="src/images/projects/Leaflets/leaflet-2.png"
+                src="./src/images/projects/Leaflets/leaflet-2.png"
                 class="img-fluid"
                 alt=""
               />
@@ -1010,7 +1024,7 @@
                 <p>Design</p>
                 <div class="portfolio-links">
                   <a
-                    href="src/images/projects/Leaflets/leaflet-2.png"
+                    href="./src/images/projects/Leaflets/leaflet-2.png"
                     data-gallery="portfolioGallery"
                     class="portfolio-lightbox"
                     title="Leaflet 2"
@@ -1019,7 +1033,7 @@
                     ></iconify-icon
                   ></a>
                   <a
-                    href="projects/portfolio-details-leaflet-2.html"
+                    href="./projects/portfolio-details-leaflet-2.html"
                     class="portfolio-details-lightbox"
                     data-glightbox="type: external"
                     title="Portfolio Details"
@@ -1032,7 +1046,7 @@
             </div>
             <div class="portfolio-wrap reports">
               <img
-                src="src/images/projects/Reports/Reports-1.png"
+                src="./src/images/projects/Reports/Reports-1.png"
                 class="img-fluid"
                 alt=""
               />
@@ -1041,7 +1055,7 @@
                 <p>Development</p>
                 <div class="portfolio-links">
                   <a
-                    href="src/images/projects/Reports/Reports-1.png"
+                    href="./src/images/projects/Reports/Reports-1.png"
                     data-gallery="portfolioGallery"
                     class="portfolio-lightbox"
                     title="Web 2"
@@ -1050,7 +1064,7 @@
                     ></iconify-icon
                   ></a>
                   <a
-                    href="projects/portfolio-details-reports.html"
+                    href="./projects/portfolio-details-reports.html"
                     class="portfolio-details-lightbox"
                     data-glightbox="type: external"
                     title="Portfolio Details"

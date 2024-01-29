@@ -8,13 +8,19 @@
 
 /* simply assign the value */
 $body-bg: #eeeeee;
-$primary: #3e64ff;
+//$primary: #3e64ff;
+$primary: $indigo-600;
+$secondary: $indigo-400;
+$progress-bar-bg: $primary;
+$dark: #000000;
+$light-text: #4b4b4b;
+$light: #ffffff;
+
 //$primary: $red-500;
 
 /* or, use an existing variable */
 $theme-colors: (
-  //primary: #3e64ff,
-  primary: $red-500
-  //secondary: red,
+  primary: $primary,
+  secondary: $secondary,
 );
-/* -------end customization-------- */
+
